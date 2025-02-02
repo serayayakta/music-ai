@@ -1,0 +1,5 @@
+# Node modules
+node_modules/
+
+# macOS Finder directory store
+.DS_Store
