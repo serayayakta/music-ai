@@ -13,6 +13,20 @@ body {
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.card span {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 15px;
+}
+.card img.arrow {
+    width: 15px;
+    height: 15px;
 }
 .bottom-nav {
     position: fixed;
@@ -28,4 +42,31 @@ body {
     border: none;
     color: white;
     font-size: 18px;
+}
+.toggle-container {
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-switch {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.toggle-container.active {
+    background-color: #4CAF50;
+}
+
+.toggle-container.active .toggle-switch {
+    transform: translateX(20px);
 }
